@@ -7,6 +7,6 @@ require_relative '../lib/move.rb'
   board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   puts "Where would you like to go?"
   input = gets.strip
-  index = input_to_index
-  update_array_at_with(board, 0, "X")
-  display_board
+  index = input_to_index(input)
+  move(board,index)
+  display_board(board)
